@@ -9,7 +9,7 @@ class Content extends Component {
   render() {
     return (
       <div>
-        {this.props.ui==="LIST"?<List />:<Movie />}
+        {this.props.ui === "LIST" ? <List /> : <Movie />}
       </div>
     );
   }

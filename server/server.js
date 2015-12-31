@@ -28,4 +28,3 @@ app.get('/movies', function(req, res){
 });
 
 app.listen(8000);
-// console.log('listening on localhost:8000');

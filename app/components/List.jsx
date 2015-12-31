@@ -44,7 +44,7 @@ class List extends Component {
                 onChange={this.searchChange.bind(this)}
                 value={this.props.search}
                 placeholder="search here"/>
-                
+
               {/*Make clearbutton below work */}
               <input type="button" value="clear"/>
             </div>
