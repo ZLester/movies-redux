@@ -26,11 +26,11 @@ body {
 }
 
 .list-heart:hover {
-  color:red;
+  color:pink;
 }
 
 .turn-pink {
-  color:pink;
+  color:deeppink;
 }
 
 .clickable {
