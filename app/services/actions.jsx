@@ -24,9 +24,16 @@ export const getData = () => {
 export const navigate = (page) => {
   return {
     type: 'NAVIGATE_TO',
-     payload: {page}
+    payload: {page}
   }
 };
+
+export const filterSearch = (text) => {
+  return {
+    type: 'FILTER',
+    payload: text
+  }
+}
 
 export const favorite = (something) => {
   //CODE HERE

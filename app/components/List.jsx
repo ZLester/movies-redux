@@ -29,7 +29,7 @@ class List extends Component {
   //FAVORITE -- SOME METHOD HERE 
 
   searchChange(event){
-    // console.log(event.target.value);
+    this.props.dispatch(actions.filterSearch(event.target.value));
   }
 
 
@@ -39,7 +39,10 @@ class List extends Component {
         <div className="list-display">
           <div className="list-header">
             <h1>Movies</h1>
-            <input type="input" onChange={this.searchChange.bind(this)}placeholder="to implement"/>
+            <input type="input" 
+              onChange={this.searchChange.bind(this)}
+              value={this.props.search}
+              placeholder="search here"/>
           </div>
           <div className="list-container">
             {this.props.movies.map((movie,i) => this.returnMovie(movie,i))}
@@ -54,7 +57,8 @@ class List extends Component {
 
 const select = (state) => {
   return {
-    movies: state.movies
+    movies: state.movies,
+    search: state.search
   };
 };
 
