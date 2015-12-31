@@ -39,10 +39,13 @@ class List extends Component {
         <div className="list-display">
           <div className="list-header">
             <h1>Movies</h1>
-            <input type="input" 
-              onChange={this.searchChange.bind(this)}
-              value={this.props.search}
-              placeholder="search here"/>
+            <div>
+              <input type="text" 
+                onChange={this.searchChange.bind(this)}
+                value={this.props.search}
+                placeholder="search here"/>
+              <input type="button" value="clear"/>
+            </div>
           </div>
           <div className="list-container">
             {this.props.movies.map((movie,i) => this.returnMovie(movie,i))}

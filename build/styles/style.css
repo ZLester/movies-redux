@@ -2,7 +2,7 @@ body {
   font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 .list-container {
-  width: 200px;
+  width: 250px;
   border: 5px solid darkgrey;
 }
 .list-movie{
@@ -67,15 +67,13 @@ body {
   flex-direction: column;
   align-items:center;
 }
-.list-header > input {
-  width: 200px;
+.list-header > div > input[type="text"] {
+  width: 170px;
   height: 30px;
-  margin:0 0 10px 0;
+  margin:0 10px 10px 0;
   border: 5px solid grey;
   font-size: 14pt;
 }
-
-
 
 
 
